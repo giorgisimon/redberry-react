@@ -1,9 +1,10 @@
-import StartingPage from "./components/StartingPage/StartingPage";
+import Pages from "./components/Pages/Pages";
 
 function App() {
+
   return (
     <div>
-      <StartingPage />
+      <Pages />
     </div>
   );
 }
