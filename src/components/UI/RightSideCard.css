@@ -1,0 +1,13 @@
+.right_side_card{
+    
+  height: 1080px;
+  width: 822px;
+  left: 1098px;
+  top: 0px;
+  border-radius: 0px;
+
+  position: absolute;
+  right: 0px;
+
+  background: #ffffff;
+}

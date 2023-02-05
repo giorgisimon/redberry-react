@@ -33,37 +33,7 @@
   border: 1px solid #1a1a1a;
 }
 
-button {
-  /* ღილაკი */
 
-  /* Auto layout */
-  cursor: pointer;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 130px;
-  gap: 20px;
-
-  position: absolute;
-  width: 464px;
-  height: 60px;
-  left: calc(50% - 464px / 2);
-  top: 513px;
-
-  /* off black */
-
-  background: #1a1a1a;
-  border-radius: 8px;
-  color: #ffffff;
-  font-family: Helvetica Neue;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
 
 .mark {
   /* LOGO-40 1 */

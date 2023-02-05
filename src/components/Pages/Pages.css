@@ -1,0 +1,32 @@
+
+.but_1 {
+    /* ღილაკი */
+  
+    /* Auto layout */
+    cursor: pointer;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 130px;
+    gap: 20px;
+  
+    position: absolute;
+    width: 464px;
+    height: 60px;
+    left: 728px;
+    top: 513px;
+  
+    /* off black */
+  
+    background: #1a1a1a;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }

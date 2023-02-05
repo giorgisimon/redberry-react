@@ -1,12 +1,14 @@
 import "./BasicInfo.css";
-
+import LeftSideCard from "../UI/LeftSideCard";
+import RightSideCard from "../UI/RightSideCard";
 function BasicInfo() {
   return (
     <div>
-      <div className="basic_info">
+      <LeftSideCard>
         <text className="info">პირადი ინფო</text>
         <text className="page_num">1/3</text>
-        <span className="line"></span>
+        <span className="line3"></span>
+        <form>
         <div className="input_div1">
           <text className="name">სახელი</text>
           <input type="text" className="input_first" placeholder="ანზორ"></input>
@@ -21,7 +23,7 @@ function BasicInfo() {
         <button className="photo_button">ატვირთვა</button>
         <div className="input_div3">
           <text className="label">ჩემ შესახებ (არასავალდებულო)</text>
-          <input type="text" className="input_about" placeholder="ზოგადი ინფო ჩემს შესახებ"></input>
+          <textarea className="input_about" placeholder="ზოგადი ინფო ჩემს შესახებ"></textarea>
         </div>
         <div className="input_div4">
           <text className="label">ელ.ფოსტა</text>
@@ -34,10 +36,11 @@ function BasicInfo() {
           <text className="note2">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</text>
         </div>
         <button className="next_button">შემდეგი</button>
-      </div>
-      <div className="resume">
+        </form>
+      </LeftSideCard>
+      <RightSideCard>
       <span className="star"></span>
-      </div>
+      </RightSideCard>
     </div>
   );
 }

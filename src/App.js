@@ -1,7 +1,8 @@
-import Pages from "./components/Pages/Pages";
+import Pages from "./components/Pages/Pages.js";
+
 
 function App() {
-
+  
   return (
     <div>
       <Pages />
