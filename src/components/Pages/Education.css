@@ -1,0 +1,319 @@
+.info {
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 149px;
+    top: 47px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  
+    /* off black */
+  
+    color: #1a1a1a;
+  }
+  
+  .line1 {
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 88px;
+  
+    /* off black */
+  
+    border: 1px solid #1a1a1a;
+  }
+  
+  .page_num {
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    left: 920px;
+    top: 49px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+  
+    text-align: right;
+  
+    /* off black */
+  
+    color: #1a1a1a;
+  }
+  .label {
+    width: 798px;
+    height: 21px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+  
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .label_small {
+    /* Label */
+  
+    width: 371px;
+    height: 21px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 700n;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+  
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .line_edu {
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 149px;
+    top: 674px;
+  
+    border: 1px solid #c1c1c1;
+  }
+  
+
+  .more_education {
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 14px 22.5px;
+gap: 20px;
+
+position: absolute;
+width: 289px;
+height: 48px;
+left: calc(50% - 289px/2 - 665.5px);
+top: 719px;
+
+background: #62A1EB;
+border-radius: 4px;
+border-color: #62a1eb;
+
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+max-lines: 1;
+
+color: #FFFFFF;
+cursor:pointer;
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+
+  .input_big {
+    box-sizing: border-box;
+  
+    width: 798px;
+    height: 48px;
+  
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  
+    padding-left: 16px;
+    padding-right: 16px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+  
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .input_small {
+    box-sizing: border-box;
+  
+    width: 371px;
+    height: 48px;
+  
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+  
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .input_about {
+    box-sizing: border-box;
+  
+    width: 798px;
+    height: 103px;
+  
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+  
+    min-height: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 13px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height, or 131% */
+  
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .note2 {
+    /* Hint */
+  
+    width: 798px;
+    height: 21px;
+  
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+  
+    display: flex;
+    align-items: center;
+  
+    /* შავი/500 */
+  
+    color: #2e2e2e;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+
+  .input_1div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 846px;
+    height: 125px;
+    left: calc(50% - 846px/2 - 411px);
+    top: 157px;
+  }
+  .input_2div{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 24px;
+gap: 8px;
+
+position: absolute;
+width: 419px;
+height: 125px;
+left: calc(50% - 419px/2 - 624.5px);
+top: 294px;
+  }
+  .input_3div{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 24px;
+gap: 8px;
+
+position: absolute;
+width: 419px;
+height: 93px;
+left: calc(50% - 419px/2 - 197.5px);
+top: 294px;
+  }
+  .input_4div{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 24px;
+gap: 8px;
+
+position: absolute;
+width: 846px;
+height: 224px;
+left: calc(50% - 846px/2 - 411px);
+top: 405px;
+  }
