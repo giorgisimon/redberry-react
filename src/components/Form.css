@@ -58,3 +58,23 @@
     padding-left: 40px;
     color: #ffffff;
   }
+
+  .not_visible{
+    display:none;
+  }
+
+  .f_name {
+    position: absolute;
+    height: 42px;
+    left: 80px;
+    top: 68px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    /* identical to box height */
+  
+    color: #f93b1d;
+  }
+  

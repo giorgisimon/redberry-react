@@ -1,10 +1,14 @@
 import Form from "./Form";
-import StartingPage from "./StartingPage";
+import StartingPage from "./Pages/StartingPage";
 import { useState } from "react";
-import LeftSideCard from "../UI/LeftSideCard";
+import LeftSideCard from "./UI/LeftSideCard";
 import "./Pages.css";
 
 function Pages() {
+
+
+
+
   const [visible, notVisible] = useState(true);
   const [page, setPage] = useState(0);
   const DisplayPage = () => {
@@ -12,7 +16,7 @@ function Pages() {
       return <StartingPage />;
     }
     if (page === 1) {
-      return <Form />;
+      return <Form  />;
     }
   };
   const clickHandler = () => {
@@ -22,11 +26,11 @@ function Pages() {
 
   return (
     <LeftSideCard>
-      <body>{DisplayPage()}
+      {DisplayPage()}
       <div>{visible && (<button onClick={clickHandler} className="but_1">
           რეზიუმეს დამატება
         </button>)}</div>
-      </body>
+      
     </LeftSideCard>
   );
 }

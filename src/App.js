@@ -1,4 +1,4 @@
-import Pages from "./components/Pages/Pages";
+import Pages from "./components/Pages";
 import "./fonts/HelveticaNeue.ttc";
 
 function App() {

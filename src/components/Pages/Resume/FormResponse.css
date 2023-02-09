@@ -1,0 +1,290 @@
+.star {
+  position: absolute;
+  height: 42px;
+  left: 78px;
+  top: 994px;
+
+  background: url(../media/LOGO-12\ 1.png);
+}
+
+.f_name {
+  position: absolute;
+  max-width:700px;
+  height: 42px;
+  
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #f93b1d;
+}
+
+
+.vector1 {
+  position: absolute;
+  left: 10.33%;
+  right: 8.33%;
+  top: 127px;
+  bottom: 8.33%;
+
+  height: 16.666664123535156px;
+  width: 16.666664123535156px;
+
+  border-radius: 0px;
+
+  color: #898989;
+}
+
+.mail {
+  position: absolute;
+  width: 187px;
+  height: 21px;
+  left: 111px;
+  top: 127px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* off black */
+
+  color: #1a1a1a;
+}
+
+.phone {
+  position: absolute;
+  width: 151px;
+  height: 21px;
+  left: 111px;
+  top: 158px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* off black */
+
+  color: #1a1a1a;
+}
+
+.vector2 {
+  position: absolute;
+  left: 10.33%;
+  right: 8.33%;
+  top: 158px;
+  bottom: 8.33%;
+
+  height: 18.666664123535156px;
+  width: 16.666664123535156px;
+
+  border-radius: 0px;
+
+  background: url(../media/Vector\ \(1\).png);
+}
+
+.about_me {
+  position: absolute;
+  width: 118px;
+  height: 22px;
+  left: 80px;
+  top: 213px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #f93b1d;
+}
+
+.about_txt {
+  position: absolute;
+  width: 432px;
+  height: 72px;
+  left: 80px;
+  top: 250px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  text-transform: lowercase;
+
+  color: #000000;
+}
+
+.r1_line {
+  position: absolute;
+  width: 662px;
+  height: 0px;
+  right: 80px;
+  top: 341px;
+
+  border: 1px solid #c8c8c8;
+}
+
+.r_experience {
+  position: absolute;
+  width: 143px;
+  height: 22px;
+  left: 80px;
+  top: 365px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #f93b1d;
+}
+
+.r_experience_header {
+  position: absolute;
+  height: 20px;
+  left: 80px;
+  top: 402px;
+
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  /* off black */
+
+  color: #1a1a1a;
+}
+
+.r_experience_date{
+  position: absolute;
+width: 183px;
+height: 19px;
+left: 80px;
+top: 429px;
+
+font-family: 'Helvetica Neue';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #919191;
+}
+.r_experience_text{
+position: absolute;
+width: 662px;
+height: 66px;
+left: 80px;
+top: 464px;
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* or 138% */
+
+text-transform: capitalize;
+
+color: #000000;
+}
+
+.r_education{
+  position: absolute;
+  width: 115px;
+  height: 22px;
+  left: 80px;
+  top: 588px;
+  
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  
+  
+  color: #F93B1D;
+}
+
+.r_education_header{
+  position: absolute;
+  width: 349px;
+  height: 20px;
+  left: 80px;
+  top: 625px;
+  
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  
+  /* off black */
+  
+  color: #1A1A1A;
+  
+}
+.r_education_date{
+  position: absolute;
+  width: 84px;
+  height: 19px;
+  left: 80px;
+  top: 652px;
+  
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #919191;
+  
+}
+.r_education_text{
+  position: absolute;
+  width: 662px;
+  height: 88px;
+  left: 80px;
+  top: 687px;
+  
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+  
+  text-transform: lowercase;
+  
+  color: #000000;
+  
+}
+
+.r2_line{
+  position: absolute;
+width: 662px;
+height: 0px;
+right: 80px;
+top: 562px;
+
+border: 1px solid #C8C8C8;
+}

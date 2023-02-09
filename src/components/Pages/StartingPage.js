@@ -1,4 +1,3 @@
-import Form from "./Form";
 import "./StartingPage.css";
 
 function StartingPage() {

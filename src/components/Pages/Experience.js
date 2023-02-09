@@ -1,18 +1,24 @@
 import LeftSideCard from "../UI/LeftSideCard";
-import RightSideCard from "../UI/RightSideCard";
-import { useState } from "react";
 import "./Experience.css";
-import React from "react";
+/*import FormResponse from "./Resume/FormResponse";*/
+import Resume from "./Resume/Resume";
 
-function Experience() {
-  const[enteredPosition, setEnteredPosition]=useState('');
-  const[enteredEmployer, setEnteredEmployer]=useState('');
-  const[enteredStartDate, setEnteredStartDate]=useState('');
-  const[enteredEndDate, setEnteredEndDate]=useState('');
-  const[enteredAbout, setEnteredAbout]=useState('');
-  const positionHandler = (event) =>{
-    setEnteredPosition (event.target.value);
-  }
+function Experience({
+  setEnteredPosition,
+  enteredPosition,
+  enteredEmployer,
+  setEnteredEmployer,
+  enteredStartDate,
+  setEnteredStartDate,
+  enteredEndDate,
+  setEnteredEndDate,
+  enteredExpAbout,
+  setEnteredExpAbout,
+}) {
+  const positionHandler = (event) => {
+    setEnteredPosition(event.target.value);
+  };
+
   const employerHandler = (event) =>{
     setEnteredEmployer (event.target.value);
   }
@@ -22,56 +28,71 @@ function Experience() {
   const endDateHandler = (event) =>{
     setEnteredEndDate (event.target.value);
   }
-  const aboutHandler = (event) =>{
-    setEnteredAbout (event.target.value);
+  const expAboutHandler = (event) =>{
+    setEnteredExpAbout (event.target.value);
   }
+
   return (
     <div>
       <LeftSideCard>
-        <text className="info">გამოცდილება</text>
-        <text className="page_num">2/3</text>
+        <div className="info">გამოცდილება</div>
+        <div className="page_num">2/3</div>
         <span className="line1"></span>
         <form>
-        <div className="input1_div">
-          <text className="label">თანამდებობა</text>
-          <input onChange={positionHandler} type="text" className="input_big" placeholder="დეველოპერი, დიზაინერი, ა.შ."></input>
-          <text className="note2">მინიმუმ 2 სიმბოლო</text>
-        </div>
-        <div className="input2_div">
-          <text className="label">დამსაქმებელი</text>
-          <input onChange={employerHandler} type="text" className="input_big" placeholder="დამსაქმებელი"></input>
-          <text className="note2">მინიმუმ 2 სიმბოლო</text>
-        </div>
-        <div className="input3_div">
-          <text className="label_small">დაწყების რიცხვი</text>
-          <input onChange={startDateHandler} type="date" className="input_small" placeholder="ანზორ"></input>
-        </div>
-        <div className="input4_div">
-          <text className="label_small">დამთავრების რიცხვი</text>
-          <input onChange={endDateHandler} type="date" className="input_small" placeholder="მუმლაძე"></input>
-        </div>
-        <div className="input5_div">
-          <text className="label">აღწერა</text>
-          <textarea onChange={aboutHandler} className="input_about" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
-        </div>
-        <span className="line2"></span>
-        <button className="more_experience">მეტი გამოცდილების დამატება</button>
-        <button className="next_button">შემდეგი</button>
-        <button className="back_button">უკან</button>
+          <div className="input1_div">
+            <div className="label">თანამდებობა</div>
+            <input
+              onChange={positionHandler}
+              value={enteredPosition}
+              type="div"
+              className="input_big"
+              placeholder="დეველოპერი, დიზაინერი, ა.შ."
+            ></input>
+            <div className="note2">მინიმუმ 2 სიმბოლო</div>
+          </div>
+          <div className="input2_div">
+            <div className="label">დამსაქმებელი</div>
+            <input
+              onChange={employerHandler} value={enteredEmployer} type="div"
+              className="input_big"
+              placeholder="დამსაქმებელი"
+            ></input>
+            <div className="note2">მინიმუმ 2 სიმბოლო</div>
+          </div>
+          <div className="input3_div">
+            <div className="label_small">დაწყების რიცხვი</div>
+            <input
+              onChange={startDateHandler} value={enteredStartDate} type="date"
+              className="input_small"
+              placeholder="ანზორ"
+            ></input>
+          </div>
+          <div className="input4_div">
+            <div className="label_small">დამთავრების რიცხვი</div>
+            <input
+              onChange={endDateHandler} value={enteredEndDate} type="date"
+              className="input_small"
+              placeholder="მუმლაძე"
+            ></input>
+          </div>
+          <div className="input5_div">
+            <div className="label">აღწერა</div>
+            <textarea
+              onChange={expAboutHandler} value={enteredExpAbout} className="input_about"
+              placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"
+            ></textarea>
+          </div>
+          <span className="line2"></span>
+          <button className="more_experience">
+            მეტი გამოცდილების დამატება
+          </button>
         </form>
       </LeftSideCard>
-      <RightSideCard>
-      <span className="star"></span>
-      <text className="f_name">ანზორ მუმლაძე</text>
-      <text className="vector1">@</text>
-      <text className="mail">imail@gmail.com</text>
-      <span className="vector2"></span>
-      <text className="phone">+995 599 55 55 55</text>
-      <text className="about_me">ჩემს შესახებ</text>
-      <text className="about_txt">ძალიან მიყვარს დიზაინის კეთება. 
-      დილით ადრე რომ ავდგები გამამხნევებელი ვარჯიშების 
-      მაგიერ დიზაინს ვაკეთებ. </text>
-      </RightSideCard>
+      <Resume enteredPosition={enteredPosition}
+      enteredEmployer={enteredEmployer}
+      enteredStartDate={enteredStartDate}
+      enteredEndDate={enteredEndDate}
+      enteredExpAbout={enteredExpAbout} />
     </div>
   );
 }

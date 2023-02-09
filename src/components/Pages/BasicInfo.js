@@ -1,46 +1,98 @@
 import "./BasicInfo.css";
 import LeftSideCard from "../UI/LeftSideCard";
-import RightSideCard from "../UI/RightSideCard";
-function BasicInfo() {
+/*import FormResponse from "./Resume/FormResponse";*/
+import Resume from "./Resume/Resume";
+
+function BasicInfo({
+  enteredName,
+  setEnteredName,
+  enteredLastName,
+  setEnteredLastName,
+  enteredAbout,
+  setEnteredAbout,
+  enteredMail,
+  setEnteredMail,
+  enteredNumber,
+  setEnteredNumber}
+) {
+  const nameHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+  const lastNameHandler = (event) => {
+    setEnteredLastName(event.target.value);
+  };
+  const aboutHandler = (event) => {
+    setEnteredAbout(event.target.value);
+  };
+  const mailHandler = (event) => {
+    setEnteredMail(event.target.value);
+  };
+  const numberHandler = (event) => {
+    setEnteredNumber(event.target.value);
+  };
+
   return (
     <div>
       <LeftSideCard>
-        <text className="info">პირადი ინფო</text>
-        <text className="page_num">1/3</text>
+        <div className="info">პირადი ინფო</div>
+        <div className="page_num">1/3</div>
         <span className="line3"></span>
         <form>
-        <div className="input_div1">
-          <text className="name">სახელი</text>
-          <input type="text" className="input_first" placeholder="ანზორ"></input>
-          <text className="note">მინიმუმ 2 ქართული ასო</text>
-        </div>
-        <div className="input_div2">
-          <text className="name">გვარი</text>
-          <input type="text" className="input_first" placeholder="მუმლაძე"></input>
-          <text className="note">მინიმუმ 2 ქართული ასო</text>
-        </div>
-        <text className="photo_text">პირადი ფოტოს ატვირთვა</text>
-        <button className="photo_button">ატვირთვა</button>
-        <div className="input_div3">
-          <text className="label">ჩემ შესახებ (არასავალდებულო)</text>
-          <textarea className="input_about" placeholder="ზოგადი ინფო ჩემს შესახებ"></textarea>
-        </div>
-        <div className="input_div4">
-          <text className="label">ელ.ფოსტა</text>
-          <input type="text" className="input__" placeholder="anzor666@redberry.ge"></input>
-          <text className="note2">უნდა მთავრდებოდეს @redberry.ge-ით</text>
-        </div>
-        <div className="input_div5">
-          <text className="label">მობილურის ნომერი</text>
-          <input type="text" className="input__" placeholder="+995 551 12 34 56"></input>
-          <text className="note2">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</text>
-        </div>
-        <button className="next_button">შემდეგი</button>
+          <div className="input_div1">
+            <div className="name">სახელი</div>
+            <input
+              onChange={nameHandler} value={enteredName} type="div"
+              className="input_first"
+              placeholder="ანზორ"
+            ></input>
+            <div className="note">მინიმუმ 2 ქართული ასო</div>
+          </div>
+          <div className="input_div2">
+            <div className="name">გვარი</div>
+            <input
+              onChange={lastNameHandler} value={enteredLastName} type="div"
+              className="input_first"
+              placeholder="მუმლაძე"
+            ></input>
+            <div className="note">მინიმუმ 2 ქართული ასო</div>
+          </div>
+          <div className="photo_text">პირადი ფოტოს ატვირთვა</div>
+          <button className="photo_button">ატვირთვა</button>
+          <div className="input_div3">
+            <div className="label">ჩემ შესახებ (არასავალდებულო)</div>
+            <textarea
+               onChange={aboutHandler} value={enteredAbout} className="input_about"
+              placeholder="ზოგადი ინფო ჩემს შესახებ"
+            ></textarea>
+          </div>
+          <div className="input_div4">
+            <div className="label">ელ.ფოსტა</div>
+            <input
+              onChange={mailHandler} value={enteredMail} type="div"
+              className="input__"
+              placeholder="anzor666@redberry.ge"
+            ></input>
+            <div className="note2">უნდა მთავრდებოდეს @redberry.ge-ით</div>
+          </div>
+          <div className="input_div5">
+            <div className="label">მობილურის ნომერი</div>
+            <input
+              onChange={numberHandler} value={enteredNumber}  type="div"
+              className="input__"
+              placeholder="+995 551 12 34 56"
+            ></input>
+            <div className="note2">
+              უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს
+            </div>
+          </div>
         </form>
       </LeftSideCard>
-      <RightSideCard>
-      <span className="star"></span>
-      </RightSideCard>
+      <Resume enteredName={enteredName}
+      enteredLastName={enteredLastName}
+      enteredAbout={enteredAbout}
+      enteredMail={enteredMail}
+      enteredNumber={enteredNumber}
+      />
     </div>
   );
 }
